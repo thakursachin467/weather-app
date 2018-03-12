@@ -26,16 +26,19 @@
 
     <div class="row mt-10">
       <div class="col-md-6  mx-auto">
-          <h4>Forecast  in {{city}} for next {{days}} days is</h4>
+          <h4>Forecast  in {{city}} for next 7 <!--{{days}}--> days is</h4>
           <div class="card" style="width: 18rem;">
 
              <ul class="list-group list-group-flush" ng-repeat="x in weatherdata1">
                <div class="card-header align-items-center">
-                     <h3 >Date {{x.date}} </h3>
+                     <h3 >Date {{x.date}}   </h3>
 
                </div>
-              <li class="list-group-item">Max temperature : {{x.maxtempF}} &#8457;</li>
+              <li class="list-group-item">Max temperature : {{x.maxtempF}} &#8457; </li>
               <li class="list-group-item">Min temperature : {{x.mintempF}} &#8457;</li>
+              {{function1(dayone,daytwo,daythree,dayfour,dayfive,daysix,dayseven)}}
+              {{function2(dayone1,daytwo1,daythree1,dayfour1,dayfive1,daysix1,dayseven1)}}
+
 
 
 
@@ -44,4 +47,33 @@
         </div>
 
   </div>
+
+
+  <!--
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          Collapsible Group Item #1
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
     </div>
+  </div>
+
+
+
+  -->
+    </div>
+
+
+
+
+<div google-chart chart="myChartObject" style="height:600px; width:100%;"></div>
+
+
+<div google-chart chart="myChartObject1" style="height:600px; width:100%;"></div>
