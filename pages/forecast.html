@@ -13,13 +13,35 @@
                 <li class="list-group-item">Current temperature : {{convertemp(weatherdata.temp)}} &#8457;</li>
                 <li class="list-group-item">Current pressure : {{weatherdata.pressure}}</li>
                 <li class="list-group-item">Humidity: {{weatherdata.humidity}}</li>
+                <li class="list-group-item">Description: {{description}}</li>
 
 
               </ul>
 
           </div>
+        </div>
+      </div>
 
 
+
+    <div class="row mt-10">
+      <div class="col-md-6  mx-auto">
+          <h4>Forecast  in {{city}} for next {{days}} days is</h4>
+          <div class="card" style="width: 18rem;">
+
+             <ul class="list-group list-group-flush" ng-repeat="x in weatherdata1">
+               <div class="card-header align-items-center">
+                     <h3 >Date {{x.date}} </h3>
+
+               </div>
+              <li class="list-group-item">Max temperature : {{x.maxtempF}} &#8457;</li>
+              <li class="list-group-item">Min temperature : {{x.mintempF}} &#8457;</li>
+
+
+
+            </ul>
+
+        </div>
+
+  </div>
     </div>
-
-</div>
