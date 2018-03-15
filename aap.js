@@ -107,7 +107,7 @@ $http({method: 'GET',
             $scope.weatherdata1=data.data.data.weather;
 
             $scope.dayone = [
-       {v: $scope.weatherdata1[0].date},
+       {v: $scope.weatherdata1[0].date },
        {v: $scope.weatherdata1[0].maxtempF},
    ];
    $scope.daytwo = [
