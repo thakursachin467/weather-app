@@ -90,7 +90,7 @@ app.controller('forcastController' , function($scope,$resource, $routeParams,$ht
       url1='http://api.worldweatheronline.com/premium/v1/weather.ashx?key=cac8c2b2e80b484b8d554459181203&q='+$scope.city+'&format=json&num_of_days=7' ;
 
 
-$https({method: 'GET',
+$http({method: 'GET',
   url:url})
     .then(function(data){
         $scope.date=data.data.dt;
