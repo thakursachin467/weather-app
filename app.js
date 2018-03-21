@@ -86,8 +86,8 @@ app.controller('forcastController' , function($scope,$resource, $routeParams,$ht
       $scope.city = cityService.city;
       $scope.days=cityService.days;
 
-      url='http://api.openweathermap.org/data/2.5/weather?q='+$scope.city+'&appid=fe934cd6055d4be90236a3202ab6f133';
-      url1='http://api.worldweatheronline.com/premium/v1/weather.ashx?key=cac8c2b2e80b484b8d554459181203&q='+$scope.city+'&format=json&num_of_days=7' ;
+      url='https://api.openweathermap.org/data/2.5/weather?q='+$scope.city+'&appid=fe934cd6055d4be90236a3202ab6f133';
+      url1='https://api.worldweatheronline.com/premium/v1/weather.ashx?key=cac8c2b2e80b484b8d554459181203&q='+$scope.city+'&format=json&num_of_days=7' ;
 
 
 $http({method: 'GET',
